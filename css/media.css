@@ -1,0 +1,92 @@
+@media only screen and (max-width: 1200px) {
+    .text-center{
+        transform: translate(0, 100%);
+    }
+}
+@media only screen and (max-width: 980px) {
+    .text-center{
+        transform: translate(0, 80%);
+    }
+}
+@media only screen and(max-width: 798px){
+    .text-center{
+        transform: translate(0, 100%);
+    }
+    h1{
+        font-size: 50px;
+    }
+    .header-p1{
+        font-size: 21px;
+    }
+    .header-p2{
+        font-size: 17px;
+    }
+    .carousel{
+        transform: translate(0, 50%) !important;
+    }
+}
+@media only screen and(max-width: 700px){
+    .text-center{
+        transform: translate(0, 50%);
+    }
+    h1{
+        font-size: 50px;
+    }
+    .header-p1{
+        font-size: 21px;
+    }
+    .header-p2{
+        font-size: 17px;
+    }
+}
+@media only screen and(max-width: 650px){
+    h1{
+        font-size: 55px;
+    }
+    .header-p1{
+        font-size: 20px;
+    }
+    .header-p2{
+        font-size: 16px;
+    }
+}
+@media only screen and(max-width: 600px){
+    h1{
+        font-size: 50px;
+    }
+    .header-p1{
+        font-size: 19px;
+    }
+    .header-p2{
+        font-size: 15px;
+    }
+    .text-center{
+        transform: translate(0, 30%);
+    }
+    #scrollbutton{
+        right: 4%;
+    }
+}
+
+@media only screen and (max-width: 440px){
+    .sc2-p1{
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width: 390px){
+    .sc2-p1{
+        font-size: 30px;
+    }
+    .sc2-p2{
+        font-size: 14px;
+    }
+    .sc2-span{
+        width: 20px;
+    }
+    .text-center{
+        transform: translate(0, 30%);
+    }
+    h1{
+        font-size: 45px;
+    }
+}

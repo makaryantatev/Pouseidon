@@ -1,0 +1,419 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+#scrollbutton{
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    padding: 5px 5px;
+    background-color: #a19f9f;
+    border-radius: 50%;
+    border: none;
+}
+header{
+    height: 710px;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),  url(../img/homepagebg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section1, .section2, .section3, .section7, .section6{
+    border-bottom: 1px solid rgb(194, 194, 194);
+}
+.navbar{
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.9) !important;
+}
+.navbar ul li a{
+    font-family: fantasy;
+    letter-spacing: 1px;
+    color: rgb(126, 126, 126)!important;
+    font-size: 19px;
+}
+.navbar ul li a:hover{
+    color: rgb(172, 44, 74) !important;
+}
+.text-center{
+    text-align: center;
+    /* transform: translate(0, 100%); */
+}
+.text-center .row{
+    margin: 10px;
+}
+.header-p1, .header-p2{
+    color: white !important;
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    color: white;
+    font-size: 60px;
+}
+.header-p1{
+    font-size: 22px;
+    letter-spacing: 0.5px;
+}
+.header-p2{
+    font-size: 18px;
+}
+/* //////////////////////////// */
+.section1{
+    margin: 0;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.section1 .sec1-img{
+    width: 100%;
+}
+/* //////////////////////////// */
+.section2{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.sc2-span{
+    margin: 10px auto !important;
+    width: 30px;
+    height: 2px;
+    margin: 20px 0px;
+    background: #000;
+}
+.sc2-p1{
+    margin: 0;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 60px;
+    font-style: italic;
+}
+.sc2-p2{
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Crimson Text', serif;
+    font-weight: 400;
+}
+/* //////////////////////////// */
+.section3{
+    margin: 0;
+    padding: 30px;
+    box-sizing: border-box;  
+}
+.section3 img{
+    width: 100%;
+}
+.section3 .sc3-span1 {
+    width: 150px;
+    height: 1px;
+    background-color: #ee997b;
+    position: absolute;
+    left: 58%;
+}
+.section3 .sc3-span {
+    width: 150px;
+    height: 1px;
+    background-color: #ee997b;
+    position: absolute;
+    left: 35%;
+}
+.sc3-p1{
+    color: #000;
+    font-size: 23px;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+/* //////////////////////////// */
+.section4{
+    margin: 0;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.section4 img{
+    width: 100%;
+}
+.section4 .icon{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ee997b;
+}
+.section4 .sc4-p1{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.5px;
+}
+.sc4-p2{
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+.section4 .righttext{
+    text-align: right;
+}
+/* //////////////////////////// */
+.section5{
+    margin: 0;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+}
+.section5 img{
+    width: 100%;
+}
+.section5 .sc5-div{
+    width: 100%;
+    position: relative;
+    padding: 0 !important ;
+}
+.section5 .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 30%;
+    color: white;
+    transition: 0.5s all;
+    opacity: 0;
+    visibility: hidden;
+}
+.section5 .sc5-div:hover .overlay{
+    opacity: 1;
+    visibility: visible;
+}
+.section5 h5{
+    color: white !important;
+    font-size: 15px;
+}
+.sc5-p1{
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: black !important;
+}
+.sc5-p2{
+    font-size: 18px;
+    font-family: 'Crimson Text', serif;
+    font-weight: 400;
+    font-style: italic;
+}
+.sc5-span{
+    width: 85px;
+    height: 2px;
+    background: #000;
+    margin-bottom: 10px;
+}
+.section5 ul li{
+    display: inline;
+}
+.section5 ul li a{
+    color: rgb(22, 22, 22);
+    margin: 8px;
+    transform: 0.5s all;
+    cursor: pointer;
+    font-weight: 500;
+}
+.section5 li:hover{
+    color: #f09473;
+}
+.section5 .end{
+    display: flex;
+    justify-content: end !important;
+}
+.section5 #catwalk, #advertisement, #fashionista, #mphoto{
+    display: none;
+}  
+/* //////////////////////////// */
+.section6{
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 600px;
+}
+.section6 .row{
+    margin: auto;
+}
+.section6 h6, h5{
+    margin: 10px;
+    color: #797979 !important;
+}
+.section6 p{
+    margin: 10px;
+    color: #797979 !important;
+}
+.section6 h5{
+    font-family: 'Montserrat', sans-serif;
+}
+.section6 h6{
+    letter-spacing: 0.5px;
+}
+.section6 p{
+    font-size: 14px;
+}
+.section6 button{
+    background-color: #797979 !important;
+}
+.section6 .carousel-caption img{
+    margin: 30px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+/* //////////////////////////// */
+.section7{
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.section7 .col-md-2 {
+    text-align: center !important;
+}
+
+.section7 img{
+    text-align: center;
+    margin: 10px;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+.section7 img:hover{
+    opacity: 1;
+}
+/* //////////////////////////// */
+.section8{
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+}
+.section8 img{
+    width: 100%;
+    filter: grayscale(1);
+    transition: 0.2s all;
+}
+.section8 img:hover{
+    filter: grayscale(0);
+}
+.section8 .sc8-div2{
+    margin: 10px;
+    padding: 0 !important;
+}
+.sc8-div1{
+    position: relative;
+}
+.sc8-div1::after{
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    line-height: 0;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s all;
+}
+.sc8-div1:hover::after{
+    content: "Angela baby";
+    opacity: 1;
+    visibility: visible;
+    height: 60px;
+    line-height: 60px;
+}
+.sc8-div{
+    text-align: center;
+    font-size: 15px;
+    color: #000;
+    background-color: white;
+}
+/* //////////////////////////// */
+.section9{
+    width: 100%;
+    margin: 0;
+    padding: 40px;
+    box-sizing: border-box;
+}
+.section9 input, textarea{
+    border-radius: 0 !important;
+} 
+.btn{
+    text-align: center;
+    padding: 8px 10px;
+    border: 1px solid #000;
+    border-radius: 30px;
+    background-color: transparent;
+    color: #000;
+    font-weight: 500;
+    font-size: 15px;
+    transition: 0.5s all;
+}
+.btn .bx{
+    font-size: 24px;
+    color: black;
+    transition: 0.5s all;
+}
+.btn:hover{
+    border: 1px solid #ee997b;
+    background-color: #ee997b;
+    color: white;
+}
+.btn:hover .bx{
+    color: white;
+}
+.section9 label{
+    font-size: 15px;
+    color: #797979;
+    font-weight: 500;
+}
+/* //////////////////////////// */
+.footer-section1{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #f3f3f3;
+}
+.footer-section1 .col-md-6 .p1{
+    display: block  ;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}  
+.footer-section1 .col-md-6 .p2{
+    font-size: 15px;
+    color: #797979;
+}
+.footer-section2{
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #e5e5e5 !important;
+}
+.footer-section2 .col-md-5 p{
+    margin: 0;
+    font-size: 14px;
+    color: #797979;
+    letter-spacing: 0.5px;
+}
+.footer-section2 a{
+    margin: 5px;
+    font-size: 15px;
+    color: #1a1a1a;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    font-weight: 500;
+}
+footer p, a{
+    display: inline-block;
+}
+.footer-section2 .row{
+    padding: 0 !important;
+    justify-content: space-between !important;
+}

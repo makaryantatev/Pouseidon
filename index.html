@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pouseidon</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/media.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+      <button id="scrollbutton" onclick="topFunction()">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAM1JREFUSEvtkkEOAUEQRd8/BwniFCLCIRzBxtpJbOxs3QNxCxESwi1KKqlJRGam20IsTK+r3+t+3eLLS1/m0wiShf8skZl1vImkS7JNDGQnMrM2sI99I0nXHEmW4AXeDegZyJIkBQHfAT3Awb5cdALGqZvUCt5O7t2HITgA/h4uHEh6VOWqFJTBJd0cZGYtoJAcI1eppE4wB1aAAyYFvDhpSLZAH5hJWpfdIpVoAWwk3cs2h2QqaflxopwvmDOT/EU5kLqZRpAs2CT6faInjAI+GdqXryIAAAAASUVORK5CYII="/>
+      </button>
+      <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo-black.png">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#about">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">OUR MODELS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">BLOG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#contact">CONTACT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#contact">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAr9JREFUSEu1le9rT3EUx9/nQ1YaimJKGgkPZn6VPGBiZSEeKaxQW0LhAbHS7r3nfu5msxYJzVYUkvIHyKMVYu3JJrWIIvnRsozIjOtzjm7uZOb7vcp2Hn7u+ZzX5/x4n0sYY6Mxjo+cgCAIZqvqDgAbASxOHqKq3UR00xhznZlf/cvjRgCYebJz7ioRbckVQFWViG4YY6qYeSAfaBiAmSeKSCeAEgBfiaiViM4w87MkCDPPFZHDAPYAmACgs7e3d3VbW1ucCzIM4Pv+FQA7AbwUkYq6urpHf7vIzKUicgvATCI6FYbhkUyA53mLiOghgO+quiKKom5mLnLOtRDRGgAOwN04jvc2NDT0MXOZiNwG8M0YM4eZ3/wN8iuDIAjOquoBIjoXhuHBxNn3/aMAmv64+DqO46UJxPO8a0RUCeC4tbYhL8D3/acA5qlqSRRFPUPOtbW1WwH0EJEhoiTIZiK6Eobhbt/31wJoTzKz1pZlAT4DmGiMGcfMkqP2xSLyHMBra+0sZp4qIu8A9Ftrp2UBPgKYNDAwUNjc3JzAMo2ZC0XkE4A+a+30LMCDRFDGmOXM3JUZ/efYrhSRDlVtj6KoPKvJJ1X1GBFdCMNw/78AgiC4rKq7AJy11h7KC2Dm+c65x0TkhsY0H8TzvNVEdCfxyZf1MKEFQXBRVasAvDDGrGfmJzmavSQV2gwArdbafZlCS1fB76tiEECLc+50fX39y/T7/HRVVAMYnwbtGBwcrGhqakqaPcJGLLuampopBQUF1wBsylOiDwBOANgOYBmAbmPMOmZOzodZznXNzMXOuUoi2gCgFMAXAF2qej+O4/ONjY3vUx0kQkvW+QNjTDkz9/9O+O8fTgq5B2AhgKfGmFXM/HYI8t+AtDfTRSSZqAWqWh1F0aVRBaSQIhHZZq09M6olyhLkqJQoH2TMAT8AqsFGKDhVWzkAAAAASUVORK5CYII="/>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+          </div>
+        </div>
+        <div class="container cntheader">
+          <div class="row">
+              <div class="col-12 text-center">
+                <p class="header-p1">A NEW CREATIVE STUDIO</p>
+                <h1>GOOD DESIGN IS ALWAYS IN SEASON</h1>
+                <p class="header-p2">ONE DAY, THE DREAM WILL COME TRUE WITH LOREM IPSUM DOLOR SIT AMET, CONSECTETUER <br> ADIPISCING ELIT, NUMMY NIBH EUISMOD TINCIDUNT LAOREET.</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="section1">
+        <div class="container cnt1">
+          <div class="row justify-content-between">
+            <div class="col-lg-6 p-3">
+                <p class="sc5-p1">From Ocean</p>
+                <p class="sc5-p2">Pouseidon brings the waves to somewhere so far, with beautiful & elegant</p>
+                <div class="sc5-span"></div>
+                <p class="sc4-p2">Eusus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Duis autem vel eum iriure dolor in hendrerit vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum</p>
+                <p class="sc4-p2">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim</p>
+                <br>
+                <button class="btn" type="submit">MORE ABOUT US <i class='bx bx-right-arrow-alt'></i> </button>
+          
+            </div>
+            <div class="col-sm-6 sec1-div">
+              <img src="img/1.png" class="sec1-img">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-------->
+      <div class="section2">
+        <div class="container cnt2">
+          <div class="row">
+            <div class="col-sm">
+              <p class="sc2-p1" id="number1">28</p>
+              <div class="sc2-span"></div>
+              <p class="sc2-p2">Projects Finished</p>
+            </div>
+            <div class="col-sm">
+              <p class="sc2-p1" id="number2">124</p>
+              <div class="sc2-span"></div>
+              <p class="sc2-p2">Happy Clients</p>
+            </div>
+            <div class="col-sm">
+              <p class="sc2-p1" id="number3">76</p>
+              <div class="sc2-span"></div>
+              <p class="sc2-p2">Hours of work</p>
+            </div>
+            <div class="col-sm">
+              <p class="sc2-p1" id="number4">500</p>
+              <div class="sc2-span"></div>
+              <p class="sc2-p2">Cup of coffee</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-------->
+      <div class="section3">
+        <div class="container cnt3">
+          <div class="row justify-content-end mb-5">
+            <div class="col-sm-4 pt-5" align="right">
+              <p class="mb-3 sc3-p1">Fashionista</p>
+              <span class="sc3-span1"></span>
+              <p class="sc4-p2 pt-3">Duis autem vel eum iriure dolor in hendrerit in vulputate velit molestie consequat</p>
+            </div>
+            <div class="col-sm-4">
+              <img src="img/work-img1.jpg">
+            </div>
+          </div>
+          <div class="row mb-5">
+            <div class="col-sm-4">
+              <img src="img/work-img2.jpg">
+            </div>
+            <div class="col-sm-4 pt-5">
+              <p class="mb-3 sc3-p1">Fashionista</p>
+              <span class="sc3-span"></span>
+              <p class="sc4-p2 pt-3">Duis autem vel eum iriure dolor in hendrerit in vulputate velit molestie consequat</p>
+            </div>
+          </div>
+          <div class="row justify-content-end mb-5">
+            <div class="col-sm-4 pt-5"  align="right">
+              <p class="mb-3 sc3-p1">Fashionista</p>
+              <span class="sc3-span1"></span>
+              <p class="sc4-p2 pt-3">Duis autem vel eum iriure dolor in hendrerit in vulputate velit molestie consequat</p>
+            </div>
+            <div class="col-sm-4">
+              <img src="img/work-img3.jpg">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <img src="img/work-img4.jpg">
+            </div>
+            <div class="col-sm-4 pt-5">
+              <p class="mb-3 sc3-p1">Fashionista</p>
+              <span class="sc3-span"></span>
+              <p class="sc4-p2 pt-3">Duis autem vel eum iriure dolor in hendrerit in vulputate velit molestie consequat</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-------->
+      <div class="section4" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="row">
+                <div class="row mb-3 justify-content-start">
+                  <div class="col-4 icon">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAcBJREFUSEu11U2IzlEYBfDfYXzUEFn5KkkxsfGRspQistCQEktNsrSYhaipieyUnY2SslAIIWVhQykbKeVjR8lCkYUk09XV++od858Z74x5lrd7znnOee5HzHBlhvn9N4FSynxsxTb0JTlam59QoJQyFzvRjy1YjkV4jw8omIdVWNrB9zPJnAkFSikHcQHLphhjT5KRMQ5KKbWjSzgyReIKK0lmNToopVzEsWmQV+jXJDXK0TMopazDq3HIv+FxBWMT1kzQxOskfU0CJ3D+L+BTnGutDWA3eiZxeCfJviaBG9jfAv/ASdzHVWzuIrbhJENNAo+wHd+xA724iYVdkNetu5I8bBJ41jrv1cVzvJgC+SesSFITGDPk23iTZLCU0nbTZfPOJjndBo26B6WUw7iFjXjSLXMr2tVJPjYKtBdLKZ3D7kZnKMlwJ6DpJi/AF8zuhhk13v4k9X36U00Ce3G3S/IrGGgPdjKBMziFehqW4PebMk69w/Ek9a40VpOD6ziAQVzGIWzAyo4jW4d4Dfeaup7MwUusx54kD7qMasz2JgefsRhrk7ydCYGRVu69SeoLOq36b3/yPw95Wu02gH8Bjw+CGXzvAZEAAAAASUVORK5CYII="/>
+                  </div>
+                  <div class="col-8">
+                    <p class="sc4-p1">Perfect Responsive</p>
+                    <p class="sc4-p2">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie</p>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-4 icon">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAW1JREFUSEvFlLErhHEYxz/fWCSTwSKLslAiUWJhuJmSwWozXOHPcCVZzZLNxEIhRSLFoiyyGEySEvfVW/ded9e93t/dOZ7tfX/P8/38vj3P8xNNDjVZn/8D2M4A+wEOX4BZScfVcqs6sN0G3APdAYAo5Qnok/RemZ8EyAHLgeJxWk7SairAdj9wA7TUCPgCBiXdldaVObAdfV8CwzWKx+lXwIgkxz8qAVlgvU7xuCwraaMqoEHhquV/twe214CVX3JRnKiig0KDd4C5BiG7wHzc6MomtwIHwFSdkEMgI+kzscm224ETYKhGyDUwKektcQ/iA9udwDnQGwh5AMYkRe9SWSROke0e4ALoSoE8A6OSHoMfuxInA8AZ0JEAeQXGJd0mXSJ1D2xPAEdANACl8QFMSzr9yWEqICq2HY1uNMJxfh6YkbSX1qMgQAGyBGwWBBclbaWJR+fBgAJkAchL2g4RrxkQKpq6B/UIJdV8A+UcYRnR0nyzAAAAAElFTkSuQmCC"/>
+                  </div>
+                  <div class="col-8">
+                    <p class="sc4-p1">Unique Design</p>
+                    <p class="sc4-p2">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-4 icon">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAYBJREFUSEvt1b+rj2EYBvDPxWBj0NHxB5CSKLEoshiOxWgkUUoZSAYWiyzH4EeJwmSyMFjlR7IcSgk7ImUzuvXqSadzvt/v+z3ndGJwb3dvz3W913Vfz/3EMleWGd/fJ6iqPdiS5OpstVV1EjNJno5yYSwFVfUMb7GxgX3ApiS7+yzuJWgK7mPtHLBvOJDk+aIVVNU2vMAr7MTKBvYTL7EV25O8G0YyUkFV3cKRHhumk5xaEEFV7cJrXJ7l+zCMNzjfgjBv4PMUVNUJXEE32HVjELzHJ+zFsSQ3Z//JIILbOITv6Aa5oceijmASa3AnyeH/BHMdW7BF13EcH/FjzBmsxnpcS9KF5E8NGvIOnMMDnBkzRdOYwoUkMyMJ5iy0ezjYk6K7SbrUDay+m9x934+H7fQNrMDR1k8lebToXdQdrKou458byFl+vyEXWz+Z5MtSCSbwtYGcbgvvUusnknSXcWj1ruum4jE2Yx9W4Um3q5J0G3ZkjUXQB7JkBf80wS/DS34ZGB9qPAAAAABJRU5ErkJggg=="/>
+                  </div>
+                  <div class="col-8">
+                    <p class="sc4-p1">Clean & Clear</p>
+                    <p class="sc4-p2">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <img src="img/service-img.png">
+            </div>
+            <div class="col-lg-4">
+              <div class="row mb-3 justify-content-end">
+                <div class="col-8 righttext">
+                  <p class="sc4-p1">Easy install</p>
+                  <p class="sc4-p2">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie</p>
+                </div>
+                <div class="col-4 icon">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAhlJREFUSEu9lU2ITnEUxn+PsrCgJAopSj7KwkaKspBJM4QFKZMVG1ZShvE5+YrehWzMYspK2JkaFCXlm4WSJrGlZCMxYkGPjv5Xd+5737n3pXHqLu6553+ec/7nOc8V42wa5/z8fwDbW4BeYBHwCjghafBvOx3Vge31wFBJsjWS7rQCsX06FZWF9Eo6Ey9FgCfAcuCApLO2D0cHwH1Jq8oAbJ8EDuW+7ZbUn70XAT4Dk+ORNGJ7KvAR+CJpShHA9k5gIOfvlnQ5H1cEeAisAHokNWwfAY4DjyWF/4/Z7gBuJ8d3YLOkG8UiigBdQFMQ0JDUkx22vSCuDZgBfEjJH5RdYRNNbW8D9gHzgbvAPGAJsFfSuUhi+xjQB7xJyV+2IkDlHtieDjxNQA1gvyQnkIuS3o5F4UqAVPGcBDITuApsl/Sjzm7UBZgFBIUDKCyGu0nStyqQSgDb04Bg10LgObAYmBTMArokfWrrinJSEUO+B8wGlgKPgLXAMuAWMBEYBjokva81ZNvrgOslwS+AlZK+pplsAK4BE4B3QEjJ60qa2m4lFcOSgqr5ResGLiVHbHunpGdVi9ZKKkYkhYSMMtu7gAu5bd4oKdvu3+66UjGW2B0ETiWQn4nCV7JKigCdwM2Su1wtKba61GzvAEJ556aAPZLON3WQBrg15DrRMn44R8tErIr/pR3UPdROXOWitZOskqb/mqzs/C+ZYsgZwpDY+AAAAABJRU5ErkJggg=="/>
+                </div>
+              </div>
+              <div class="row mb-3 justify-content-end">
+                <div class="col-8 righttext">
+                  <p class="sc4-p1">Premium Support</p>
+                  <p class="sc4-p2">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie</p>
+                </div>
+                <div class="col-4 icon">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAdZJREFUSEu1lc+LTnEUh58HsRGRnULKjw0SCVlZi/wDaqRJMmz8qElGJJoVNiaz8SNsbWSLFWUhyYZC2YgoIjY++k53Zt6574z3jt45m7s53/N87znnPldmOJzh+kwbkKScOapeanK5aQGSrAJuAlvVkbNJHgCH1LeTARsBkswGTgADwLxSqAUQ4BdwUL1Rh3QEJFkH3AbKcyxaAD3AEDAX6FWHJ+RN1cck5aZngGPAnLabVS2q2rQdeAzMAnaqD0fzx94gyR7gIrC20fDGZ1BaM5SkHzgPvATWq6V141uU5AOwtEnx2gx+AyuBj8C7qsYu9X4dMEJsGrUhX1D7kxwBLgPDam83AS/UDUm2AE+B5+rGbgK+qwuSLAE+AV/Vxd0EfFMXJlkEfAF+qPO7CXiibkuyCXgGvFZXdxNwVh1I0gdcAW6p++qA98Cy/9iiookVwGfgDbAc2KveqwN2A4PAmiaQljUteriW5BRwDnhVtKL+mQCoF01S3FJUcbyBKnZUqijfUlHFozZV/MNJnWS3H7haya5Hvd5Idq1Jla5PAqen0PVP4IB6t02KTfo9mlP9cO4Am1tmUIZ5WC0ua4uO/4NJZlPO9KllHTvGtAEdK9YSZhzwFyWR2RnTbzyZAAAAAElFTkSuQmCC"/>
+                </div>
+              </div>
+              <div class="row justify-content-end">
+                <div class="col-8 righttext">
+                  <p class="sc4-p1">And much more</p>
+                  <p class="sc4-p2">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie</p>
+                </div>
+                <div class="col-4 icon">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAdtJREFUSEvVlU9IVFEYxX+nkFqMIRG4CAktcBUYFIKUhovaCUUJLiz7sxC3BbVwZxQI7sRoUS0r1CjQRasgIqFdEOhGiBRaBBG4KII68sFVntPMm2lyiL7dzHff+d17vvPuE3Uu1Vmf/w9guxNok/Qo3NmWE9huAgaBy0AHsCZpz18BbO8ATgNDwBmgITPPj5IO1ASwfRC4AlwA9ifRT8CvzO9ZSeeqBtguAOeTBcczOzUwBcwB4XlYFXVD0nhFgO0TwKUkHpBsLSbgPmAG2JVp9kp6WRJgO459MQkfKvGe/ADuALeBAeABEPPYqLCqIOnbFoDto8At4FROuhbCf0mLtkeBsRIbeC/p8Mb/mzG1vQS0l3mz14CbwN3UnwRGyqy9L+lqKcBOoCf5HbFrTovmgWFJq7Yjio+BszlXTKy99xsg+0DK+MlIhaSn0bPdCDwDenPEo9Uh6V0uoFggxfQVcKSC+Pc04J9/CjgGvK0gHu3XkiLam1XVXWQ7kvUiPfUF2FsGNiHpei2AfuAJEEnrBvqASNLuIlC/pOlaAMPANaBL0uc09Mj6c6A1I9gq6UMtgBBbkfS1KG1xJT9MsV2V1FJsXVUzqDRc2/EtWJb0pi6AvA1sywn+KWAdXNGFGVrG0lkAAAAASUVORK5CYII="/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--------> 
+      <div class="section5">
+        <div class="container cnt5">
+          <div class="row">
+            <div class="col-lg-12">
+              <p class="sc5-p1">Our Gallery</p>
+              <p class="sc5-p2">Some our recent works is here. Discover them now!</p>
+              <div class="sc5-span"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 end">
+              <ul>
+                <li><a id="a1" onclick="functionviewall()">View all</a></li>
+                <li><a id="a2" onclick="functioncatwalk()">Catwalk</a></li>
+                <li><a id="a3" onclick="functionadvertisement()">Advertisement</a></li>
+                <li><a id="a4" onclick="functionfashionista()">Fashionista</a></li>
+                <li><a id="a5" onclick="functionmphoto()">Model Photo</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container" id="viewall">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="row mb-4">
+                <div class="col-12">
+                  <div class="sc5-div">
+                    <img src="img/porfolio-01.jpg">
+                    <div class="overlay" align="center">
+                      <h4>Sloggi’s collection</h4>
+                      <h5>Fashionista</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-4">
+                <div class="col-12">
+                  <div class="sc5-div">
+                    <img src="img/porfolio-04.jpg">
+                    <div class="overlay" align="center">
+                      <h4>Sloggi’s collection</h4>
+                      <h5>Fashionista</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="row mb-4">
+                <div class="col-12">
+                  <div class="sc5-div">
+                    <img src="img/porfolio-02.jpg">
+                    <div class="overlay" align="center">
+                      <h4>Sloggi’s collection</h4>
+                      <h5>Fashionista</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-4">
+                <div class="col-12">
+                  <div class="sc5-div">
+                    <img src="img/porfolio-05.jpg">
+                    <div class="overlay" align="center">
+                      <h4>Sloggi’s collection</h4>
+                      <h5>Fashionista</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="row mb-4">
+                <div class="col-12">
+                  <div class="sc5-div">
+                    <img src="img/porfolio-03.jpg">
+                    <div class="overlay" align="center">
+                      <h4>Sloggi’s collection</h4>
+                      <h5>Fashionista</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-4">
+                <div class="col-12">
+                  <div class="sc5-div">
+                    <img src="img/porfolio-06.jpg">
+                    <div class="overlay" align="center">
+                      <h4>Sloggi’s collection</h4>
+                      <h5>Fashionista</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="conatiner" id="catwalk">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="row mb-4">
+                <div class="col-12">
+                  <div class="sc5-div">
+                    <img src="img/porfolio-01.jpg">
+                    <div class="overlay" align="center">
+                      <h4>Sloggi’s collection</h4>
+                      <h5>Fashionista</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="row mb-4">
+                <div class="col-12">
+                  <div class="sc5-div">
+                    <img src="img/porfolio-03.jpg">
+                    <div class="overlay" align="center">
+                      <h4>Sloggi’s collection</h4>
+                      <h5>Fashionista</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-4">
+                <div class="col-12">
+                  <div class="sc5-div">
+                    <img src="img/porfolio-04.jpg">
+                    <div class="overlay" align="center">
+                      <h4>Sloggi’s collection</h4>
+                      <h5>Fashionista</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="row mb-4">
+                <div class="col-12">
+                  <div class="sc5-div">
+                    <img src="img/porfolio-05.jpg">
+                    <div class="overlay" align="center">
+                      <h4>Sloggi’s collection</h4>
+                      <h5>Fashionista</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="conatiner" id="advertisement">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="row mb-4">
+                <div class="col-12">
+                  <div class="sc5-div">
+                    <img src="img/porfolio-01.jpg">
+                    <div class="overlay" align="center">
+                      <h4>Sloggi’s collection</h4>
+                      <h5>Fashionista</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="conatiner" id="fashionista">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="row mb-4">
+                <div class="col-12">
+                  <div class="sc5-div">
+                    <img src="img/porfolio-06.jpg">
+                    <div class="overlay" align="center">
+                      <h4>Sloggi’s collection</h4>
+                      <h5>Fashionista</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="conatiner" id="mphoto">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="row mb-4">
+                <div class="col-12">
+                  <div class="sc5-div">
+                    <img src="img/porfolio-06.jpg">
+                    <div class="overlay" align="center">
+                      <h4>Sloggi’s collection</h4>
+                      <h5>Fashionista</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="row mb-4">
+                <div class="col-12">
+                  <div class="sc5-div">
+                    <img src="img/porfolio-05.jpg">
+                    <div class="overlay" align="center">
+                      <h4>Sloggi’s collection</h4>
+                      <h5>Fashionista</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+      <!-------->
+      <div class="section6 cnt6">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-10">
+              <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/pure-white-background-85a2a7fd.jpg" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                      <img src="img/test-img.jpg">
+                      <h5>Laingockien</h5>
+                      <h6>The most handsome men in the world</h6>
+                      <p>I’ve just wordked with Pouseidon last week. Uhm. I can say this is the best team that I have ever worked together. All of them are very, very professional and creative, their unbelieved plan made our concept become perfect. I recommend you to try one of their solutions youself. Once again, thanks so much, Pouseidon. 5 stars for you!!</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item active">
+                    <img src="img/pure-white-background-85a2a7fd.jpg" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                      <img src="img/test-img.jpg">
+                      <h5>Laingockien</h5>
+                      <h6>The most handsome men in the world</h6>
+                      <p>I’ve just wordked with Pouseidon last week. Uhm. I can say this is the best team that I have ever worked together. All of them are very, very professional and creative, their unbelieved plan made our concept become perfect. I recommend you to try one of their solutions youself. Once again, thanks so much, Pouseidon. 5 stars for you!!</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item active">
+                    <img src="img/pure-white-background-85a2a7fd.jpg" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                      <img src="img/test-img.jpg">
+                      <h5>Laingockien</h5>
+                      <h6>The most handsome men in the world</h6>
+                      <p>I’ve just wordked with Pouseidon last week. Uhm. I can say this is the best team that I have ever worked together. All of them are very, very professional and creative, their unbelieved plan made our concept become perfect. I recommend you to try one of their solutions youself. Once again, thanks so much, Pouseidon. 5 stars for you!!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-------->
+      <div class="section7">
+        <div class="conatainer cnt1">
+          <div class="row justify-content-evenly">
+            <div class="col-md-2">
+              <img src="img/brand-img1.png">
+            </div>
+            <div class="col-md-2">
+              <img src="img/brand-img2.png">
+
+            </div>
+            <div class="col-md-2">
+              <img src="img/brand-img3.png">
+
+            </div>
+            <div class="col-md-2">
+              <img src="img/brand-img4.png">
+
+            </div>
+            <div class="col-md-2">
+              <img src="img/brand-img5.png">
+
+            </div>
+            <div class="col-md-2">
+              <img src="img/brand-img1.png">
+
+            </div>
+            
+            </div>
+          </div>
+        </div>
+      <!-------->
+      <div class="section8">
+        <div class="conatiner cnt8">
+          <div class="row justify-content-center mb-3">
+            <div class="col-12">
+              <p class="sc5-p1">Our Models</p>
+              <p class="sc5-p2">The success of Pouseidon is passion and love. Meet them now!</p>
+              <div class="sc5-span"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm m-2 sc8-div1 sc8-div2">
+              <img src="img/model-img01.jpg">
+            </div>
+            <div class="col-sm m-2 sc8-div1 sc8-div2">
+              <img src="img/model-img02.jpg">
+            </div>
+            <div class="col-sm m-2 sc8-div1 sc8-div2">
+              <img src="img/model-img03.jpg">
+            </div>
+            <div class="col-sm m-2 sc8-div1 sc8-div2">
+              <img src="img/model-img04.jpg">
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-sm m-2 sc8-div1 sc8-div2">
+              <img src="img/model-img05.jpg">
+            </div>
+            <div class="col-sm m-2 sc8-div1 sc8-div2">
+              <img src="img/model-img06.jpg">
+            </div>
+            <div class="col-sm m-2 sc8-div1 sc8-div2">
+              <img src="img/model-img07.jpg">
+            </div>
+            <div class="col-sm-3 m-2 sc8-div sc8-div2">
+              <p>Meet All Them <img style="width: 20px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJ9JREFUSEvtlMENhDAMBIdOoBOuEzqBqwRRCa3QCchSHgjQ2d6DH/nkE80k61UqHl7Vw3xegZuwElEPTMDi0iE9A4MPBf6JSLIvqIEZsN1e4EqyAkslJVEEKYkqCEt+CdZIS3ZnLmdyt6A5XurfiEagLY06wU2mCqxJLlwVhOGKIAVXBF2JxhpzmfkdQ7b/6ButsDrkKF9u0SsIJ+Ae3AArIiEZqLDdhgAAAABJRU5ErkJggg=="/></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-------->
+      <div class="section9" id="contact">
+        <div class="container cnt9">
+          <div class="row">
+            <div class="col-lg-6">
+              <form>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Your Name *</label>
+                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Your Email *</label>
+                      <input type="email" class="form-control" id="exampleInputPassword1">
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-12">
+                    <div class="mb-3">
+                      <label for="exampleFormControlTextarea1" class="form-label">Your Message *</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="mb-3">
+                      <button type="submit" class="btn mt-4"> SEND MESSAGE <i class='bx bx-right-arrow-alt'></i> </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-6 imgcol" style="height: 500px; background-image: url(img/sc9bg.png); background-size: cover; background-repeat: no-repeat;"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-section1">
+        <div class="container cnt11">
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <p class="p1">POUSEIDON.</p>
+              <p class="p2">7th floor - Palace Building - 221b Walk of Fame - London- United Kingdom <br> (+84). 123. 456. 789 - info@poiseidon.lnk</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-section2">
+        <div class="container cnt12">
+          <div class="row justify-content-between">
+            <div class="col-md-5">
+              <p>Made with ❤️ by </p>
+              <a href="#">Bootstrap Themes</a>
+              <p>2016. All Rights Reserved</p>
+            </div>
+            <div class="col-md-4">
+              <a href="#">Facebook</a>
+              <a href="#">Twitter</a>
+              <a href="#">Instagram</a>
+              <a href="#">Pinterest</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="jquery-3.7.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
